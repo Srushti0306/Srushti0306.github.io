@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portfolio of Srushti Kashid — Software Engineer and Computer Science graduate student." />
+  <title>Srushti Kashid — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#"><span class="logo-mark">SK</span> <span class="logo-text">Srushti Kashid</span></a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#extras">Extras</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Hello, I'm <span class="accent">Srushti</span></h1>
+          <p class="lede">
+            MS in Computer Science at California State University, Sacramento. I design APIs, build ML-powered products,
+            and craft reliable, user-friendly web experiences.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#" id="chatOpen">Chatbot</a>
+            <a class="btn" href="#contact">Get in Touch</a>
+          </div>
+          <ul class="quick-facts">
+            <li><strong>Location: </strong> Sacramento, USA</li>
+          </ul>
+        </div>
+        <div class="portrait-card">
+          <div class="portrait" role="img" aria-label="Abstract portrait placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I'm a Computer Science graduate student with hands on experience building scalable APIs (Node.js, NestJS,
+          Express), data layers (Prisma, Sequelize, SQL/NoSQL), and AI/ML features (Python, CNNs, RAG with LangChain). I
+          enjoy turning complex problems into simple, usable products.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+        <article class="card">
+          <header class="card-header">
+            <h3>Software Engineering Intern — Silicon Stack</h3>
+            <span class="meta">July 2024 – April 2025</span>
+          </header>
+          <ul class="card-list">
+            <li>Contributed to the Hyundai General Service Portal to enhance UX and API capabilities.</li>
+            <li>Designed APIs using Node.js, NestJS, Express; optimized DB ops with Prisma & Sequelize.</li>
+            <li>Delivered a responsive, user‑friendly portal with efficient data operations at scale.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header class="card-header">
+            <h3>Project Intern — Creosis Technologies</h3>
+            <span class="meta">June 2023 – April 2024</span>
+          </header>
+          <ul class="card-list">
+            <li>Built a remote monitoring system for hydraulic clamping machines to reduce downtime.</li>
+            <li>Implemented predictive maintenance with ML; real‑time data for proactive decisions.</li>
+            <li>Stack: Python, Flask, React.js; intuitive UI showing live data, status, and fault predictions.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Image Forgery Detection</h3>
+              <span class="meta">Python · AI/ML · CNN</span>
+            </header>
+            <p>Detected image manipulations with a CNN trained on the CASIA dataset, achieving high precision and
+              accuracy.</p>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <h3>ChatBot</h3>
+              <span class="meta">Python · AI · LangChain</span>
+            </header>
+            <p>Conversational interface with per‑user session memory using RunnableWithMessageHistory for a smooth,
+              personalized chat experience.</p>
+          </article>
+
+          <article class="card">
+            <header class="card-header">
+              <h3>AskYouTubeBot</h3>
+              <span class="meta">AI · RAG · LangChain</span>
+            </header>
+            <p>Chrome extension to query the current YouTube video via transcripts indexed in a FAISS vector DB and
+              RAG‑based responses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid skills">
+          <div class="skill-col">
+            <h4>Programming</h4>
+            <ul>
+              <li>Python, JavaScript, C++</li>
+              <li>Node.js, NestJS</li>
+              <li>Familiar: C, Java</li>
+            </ul>
+          </div>
+          <div class="skill-col">
+            <h4>Web & Frameworks</h4>
+            <ul>
+              <li>HTML, CSS, JavaScript, React</li>
+              <li>Flask, Express, LangChain, LangSmith</li>
+            </ul>
+          </div>
+          <div class="skill-col">
+            <h4>Databases</h4>
+            <ul>
+              <li>MS SQL, MySQL, MongoDB, Postgres</li>
+              <li>Vector: Pinecone, FAISS</li>
+            </ul>
+          </div>
+          <div class="skill-col">
+            <h4>Certifications</h4>
+            <ul>
+              <li>AWS Academy Cloud Foundation</li>
+              <li>AWS Academy Cloud Architecting</li>
+              <li>Intro to Cybersecurity (Cisco)</li>
+              <li>AI with Python (Great Learning)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>California State University, Sacramento</h3>
+            <p>M.S. in Computer Science · 2025–present</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Marathwada Mitra Mandal’s College of Engineering</h3>
+            <p>B.E. in Computer Science Engineering · 2020–2024 · CGPA: 9.04/10</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Blossom Public School</h3>
+            <p>12th PCM · 2019–2020 · 79.9%<br>10th · 2017–2018 · 86.6%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="extras" class="section">
+      <div class="container">
+        <h2>Extras</h2>
+        <div class="grid cards">
+          <article class="card">
+            <header class="card-header">
+              <h3>Paper Publication</h3>
+              <span class="meta">Jan 2024</span>
+            </header>
+            <p><em>Intelligent Remote Monitoring System for Hydraulic Clamping Machines: A Fusion of AI, Cloud
+                Computing, and User Interaction</em> — Published in Indian Journal of Technical Education (Vol. 47,
+              Special Issue).</p>
+          </article>
+          <article class="card">
+            <header class="card-header">
+              <h3>Activities</h3>
+            </header>
+            <ul class="card-list">
+              <li>Fun Team member: planned and executed office events to foster culture.</li>
+              <li>Volunteer, Ensemble (college fest): coordinated across teams.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Email:</strong> <a href="mailto:srushti0306@gmail.com">srushti0306@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+12792220266">(279) 222‑0266</a></p>
+            <p><strong>LinkedIn:</strong> <a href="#"
+                aria-disabled="true">https://www.linkedin.com/in/srushti-kashid-99baa5267/</a></p>
+            <p><strong>GitHub:</strong> <a href="#" aria-disabled="true">https://github.com/Srushti0306</a></p>
+          </div>
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/xqayajeq" method="POST">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Srushti Kashid. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Chat panel -->
+  <div class="chat-panel" id="chatPanel" aria-hidden="true">
+    <header class="chat-header">
+      <strong>Ask about Srushti</strong>
+      <button class="chat-close" id="chatClose" aria-label="Close">✕</button>
+    </header>
+
+    <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+    <form class="chat-inputbar" id="chatForm">
+      <input id="chatInput" type="text" placeholder="Ask about projects, skills, experience…" autocomplete="off" />
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
