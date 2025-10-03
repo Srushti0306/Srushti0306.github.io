@@ -31,3 +31,6 @@ A clean, professional, and simple portfolio built with HTML, CSS, and vanilla JS
 
 - **GitHub Pages**: push the folder to a repository and enable Pages.
 - **Vercel/Netlify**: drag‑and‑drop the folder onto the platform UI.
+
+## Portfolio is live on
+-Link = https://Srushti0306.github.io 
