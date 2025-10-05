@@ -144,4 +144,31 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
     return "I can answer about projects, experience, skills, education, or contact. Try: “show projects”.";
   }
+   // ==== Curiosity Board logic ====
+  const curiosities = [
+    { q: "Why do machine learning models forget old data?", a: "Because they optimize for recent gradients — continual learning acts as memory for AIs." },
+    { q: "Why does everyone love Python for AI?", a: "It’s not the fastest — just the friendliest. The ecosystem makes it the universal ML language." },
+    { q: "Can APIs feel emotional?", a: "They can’t feel, but they can communicate empathy through tone and design." },
+    { q: "What’s the difference between intelligence and understanding?", a: "Intelligence solves problems; understanding explains *why* they work." },
+    { q: "Can small data ever beat big data?", a: "Yes — with better features, domain insight, and smarter sampling. Quality still beats quantity." },
+    { q: "What’s the most human thing in machine learning?", a: "Error. Both humans and models learn best by getting things wrong." }
+  ];
+
+  const curiosityBox = document.getElementById("curiosityBox");
+  if(curiosityBox){
+    let i = 0;
+    function showCuriosity(){
+      curiosityBox.classList.add("fade");
+      setTimeout(()=>{
+        const c = curiosities[i];
+        curiosityBox.innerHTML = `
+          <p class="question">❓ ${c.q}</p>
+          <p class="answer">💭 ${c.a}</p>
+        `;
+        curiosityBox.classList.remove("fade");
+        i = (i + 1) % curiosities.length;
+      }, 500);
+    }
+    setInterval(showCuriosity, 7000);
+  }
 })();
