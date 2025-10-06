@@ -117,12 +117,7 @@ ul{margin:.5rem 0 0 1.25rem}
 .cta-row{display:flex;gap:.75rem;margin-top:1rem}
 
 .quick-facts{list-style:none;margin-top:1rem;padding:0;color:var(--muted)}
-/* .portrait-card{display:grid;place-items:center}
-.portrait{width:min(280px,80vw);aspect-ratio:1/1;border-radius:1.2rem;background:
-  radial-gradient(circle at 30% 30%, rgba(134,230,199,.5), transparent 40%),
-  radial-gradient(circle at 70% 70%, rgba(13,184,133,.35), transparent 45%),
-  linear-gradient(135deg, #17202e, #0f1520 60%, #0b0f17);border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.35)
-} */
+
 /* Cards & grids */
 .grid{display:grid;gap:1rem}
 .cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
@@ -260,5 +255,72 @@ ul{margin:.5rem 0 0 1.25rem}
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
   background: linear-gradient(135deg, #00dcb0 0%, #0068a1 100%);
 }
+
+
+#projects { position: relative; }
+
+#projects .proj-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: .5rem 0 1rem;
+  scrollbar-width: none;
+}
+#projects .proj-track::-webkit-scrollbar { display: none; }
+#projects .meta {
+  color: #000000; /* black text */
+}
+/* Gradient cards */
+#projects .card {
+  flex: 0 0 420px;
+  background: linear-gradient(145deg, #00cba9, #004e92);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 22px rgba(0,0,0,.28);
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+#projects .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.36);
+}
+#projects .github-link {
+  align-self: flex-start;
+  margin-top: auto;
+  color:#fff; font-weight:600;
+  border:1px solid rgba(255,255,255,.35);
+  padding:.5rem 1.1rem; border-radius:.6rem;
+  transition: background .25s ease, transform .2s ease;
+}
+#projects .github-link:hover {
+  background:rgba(255,255,255,.14);
+  transform:scale(1.05);
+}
+
+/* Scroll arrows */
+#projects .proj-scroll {
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:2.4rem; height:2.4rem; border-radius:50%;
+  border:none; cursor:pointer; z-index:5;
+  background:rgba(0,0,0,.45); color:#fff; font-size:1.4rem;
+  display:grid; place-items:center;
+  transition:background .25s ease, transform .2s ease;
+}
+#projects .proj-scroll:hover {
+  background:rgba(0,0,0,.65);
+  transform:translateY(-50%) scale(1.06);
+}
+#projects .proj-scroll.left{left:0.25rem;}
+#projects .proj-scroll.right{right:0.25rem;}
+
+@media (max-width:640px){
+  #projects .proj-scroll{display:none;}
+  #projects .card{flex:0 0 85vw;}
+}
+
+
 
 

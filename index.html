@@ -70,16 +70,6 @@
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I'm a Computer Science graduate student with hands on experience building scalable APIs (Node.js, NestJS,
-          Express), data layers (Prisma, Sequelize, SQL/NoSQL), and AI/ML features (Python, CNNs, RAG with LangChain). I
-          enjoy turning complex problems into simple, usable products.
-        </p>
-      </div>
-    </section>
 
     <section id="experience" class="section">
       <div class="container">
@@ -90,70 +80,116 @@
             <span class="meta">July 2024 – April 2025</span>
           </header>
           <ul class="card-list">
-            <li>Contributed to the Hyundai General Service Portal to enhance UX and API capabilities.</li>
-            <li>Designed APIs using Node.js, NestJS, Express; optimized DB ops with Prisma & Sequelize.</li>
-            <li>Delivered a responsive, user‑friendly portal with efficient data operations at scale.</li>
-          </ul>
+            <li>Built and optimized RESTful APIs in Node.js and NestJS, reducing response time by 35% and serving over
+              10,000 daily users.</li>
+            <li>Integrated Prisma and Sequelize ORM to streamline database operations, cutting query latency by 40%.
+            </li>
+            <li>Developed an automated Excel export feature in Node.js to generate downloadable user summaries and
+              car details,
+            </li>
+            <li>Enhanced the Hyundai General Service Portal interface, improving user experience and increasing
+              adoption by 20%.
+            </li>
+
         </article>
 
         <article class="card">
           <header class="card-header">
-            <h3>Project Intern — Creosis Technologies</h3>
+            <h3>Software Engineering Intern — Creosis Technologies</h3>
             <span class="meta">June 2023 – April 2024</span>
           </header>
           <ul class="card-list">
-            <li>Built a remote monitoring system for hydraulic clamping machines to reduce downtime.</li>
-            <li>Implemented predictive maintenance with ML; real‑time data for proactive decisions.</li>
-            <li>Stack: Python, Flask, React.js; intuitive UI showing live data, status, and fault predictions.</li>
+            <li>Developed a predictive maintenance system for hydraulic clamping machines using Machine Learning (SVM,
+              LSTM), Flask, and React.js.</li>
+            <li>Achieved 96.87% fault prediction accuracy and an R² score of 0.95,
+              reducing unplanned downtime by 30%.</li>
+            <li>Implemented real-time dashboards for operators, improving decision-making and boosting machine
+              productivity by 20%.</li>
+            <li>Supported proactive maintenance and enhanced industrial safety through early fault detection and trend
+              analysis.</li>
+          </ul>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="grid cards">
+<section id="projects" class="section">
+  <div class="container">
+    <h2>Projects</h2>
 
-          <article class="card">
-            <header class="card-header">
-              <h3>Image Forgery Detection</h3>
-              <span class="meta">Python · AI/ML · CNN</span>
-            </header>
-            <p>Detected image manipulations with a CNN trained on the CASIA dataset, achieving high precision and
-              accuracy.</p>
-            <a href="https://github.com/Srushti0306/image-forgery-detection" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </article>
+    <!-- Scroll arrows -->
+    <button class="proj-scroll left" id="projScrollLeft" aria-label="Scroll left">‹</button>
+    <button class="proj-scroll right" id="projScrollRight" aria-label="Scroll right">›</button>
 
-          <article class="card">
-            <header class="card-header">
-              <h3>ChatBot</h3>
-              <span class="meta">Python · AI · LangChain</span>
-            </header>
-            <p>Conversational interface with per-user session memory using RunnableWithMessageHistory for a smooth,
-              personalized chat experience.</p>
-            <a href="https://github.com/Srushti0306/chatbot" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </article>
+    <!-- Horizontal scroll track -->
+    <div class="proj-track" id="projTrack">
 
-          <article class="card">
-            <header class="card-header">
-              <h3>AskYouTubeBot</h3>
-              <span class="meta">AI · RAG · LangChain</span>
-            </header>
-            <p>Chrome extension to query the current YouTube video via transcripts indexed in a FAISS vector DB and
-              RAG-based responses.</p>
-            <a href="https://github.com/Srushti0306/Ask_Tube_Bot" target="_blank" class="github-link">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </article>
+      <article class="card">
+        <header class="card-header">
+          <h3>Image Forgery Detection</h3>
+          <span class="meta">Python · AI/ML · Convolutional Neural Network (CNN)</span>
+        </header>
+        <ul class="card-list">
+          <li>Developed a CNN-based system with 6 layers to detect various types of image manipulations, achieving over 95% classification accuracy on the CASIA dataset.</li>
+          <li>Applied deep learning techniques to accurately classify forged vs. authentic images, handling 10,000+ training images efficiently.</li>
+          <li>Gained comprehensive understanding of CNN architectures, including both basic and advanced concepts, to build reliable image forgery detection models.</li>
+        </ul>
+        <a href="https://github.com/Srushti0306/image-forgery-detection" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </article>
 
-        </div>
-      </div>
-    </section>
+      <article class="card">
+        <header class="card-header">
+          <h3>ChatBot</h3>
+          <span class="meta">Python · AI · LangChain</span>
+        </header>
+        <ul class="card-list">
+          <li>Developed a real-time chatbot using GPT-4o-mini and Streamlit, handling 1000+ messages per session and 500+ concurrent users.</li>
+          <li>Implemented user-specific memory with RunnableWithMessageHistory to maintain context across multiple sessions.</li>
+          <li>Delivered a dynamic chat experience with instant responses under 2 seconds, enabling smooth multi-user interaction.</li>
+        </ul>
+        <a href="https://github.com/Srushti0306/chatbot" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <h3>AskYouTubeBot</h3>
+          <span class="meta">AI · LangChain · Retrieval-Augmented Generation (RAG)</span>
+        </header>
+        <ul class="card-list">
+          <li>Developed a Chrome extension enabling 500+ users to ask questions about the currently playing YouTube video in real-time.</li>
+          <li>Extracted transcripts from YouTube videos using YouTube Transcript API and stored them in a FAISS vector database for sub-second retrieval.</li>
+          <li>Implemented Retrieval-Augmented Generation (RAG) with LangChain and GPT-4o-mini, fetching relevant transcript segments and generating responses with less than 2 seconds latency.</li>
+        </ul>
+        <a href="https://github.com/Srushti0306/Ask_Tube_Bot" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <h3>Document Q&A Chatbot</h3>
+          <span class="meta">Python · LangChain · Pinecone · OpenAI LLMs</span>
+        </header>
+        <ul class="card-list">
+          <li>Developed a document chatbot serving 1000+ queries/day with 92% accuracy using LangChain and OpenAI LLMs.</li>
+          <li>Implemented PDF parsing, text chunking, and Pinecone vector storage for sub-second retrieval across 50k+ documents.</li>
+          <li>Integrated session-based memory for personalized, context-aware responses for multiple concurrent users.</li>
+        </ul>
+        <a href="#" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
 
 
     <section id="skills" class="section">
